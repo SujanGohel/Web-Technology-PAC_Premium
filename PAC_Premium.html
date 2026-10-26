@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Travel Itinerary</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS for Native Smooth Scrolling -->
+    <style>
+        /* 
+          Crucial CSS: Enables native smooth scrolling and offsets the scroll position 
+          so the fixed navbar doesn't cover the section headings.
+        */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+        }
+        
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Styling the navbar */
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        /* Section styling for spacing and layout */
+        section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            min-height: 80vh; /* Ensures there is enough room to scroll to each section clearly */
+        }
+
+        .hero-image {
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- Fixed Top Navigation Bar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#overview">⛩️ Kyoto Explorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- hrefs must exactly match the section IDs below -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accommodation">Accommodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container mt-4">
+
+        <!-- 1. OVERVIEW SECTION -->
+        <section id="overview">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mb-4">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop" class="hero-image shadow-sm" alt="Kyoto Scenery">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary mb-3">Kyoto, Japan</h1>
+                    <p class="lead text-secondary">7 Days • Spring Awakening Itinerary</p>
+                    <p>Experience the magic of Kyoto during the sakura season. This itinerary covers a blend of historic temples, vibrant cultural districts, and culinary delights. From the serene Arashiyama Bamboo Grove to the iconic thousands of torii gates at Fushimi Inari, get ready for an unforgettable journey into Japan's ancient capital.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm border-0 bg-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary border-bottom pb-2">Quick Facts</h5>
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li class="mb-2"><strong>🗓️ Dates:</strong> Apr 10 - Apr 17</li>
+                                <li class="mb-2"><strong>🌤️ Weather:</strong> 15°C - 22°C</li>
+                                <li class="mb-2"><strong>💴 Currency:</strong> JPY (Yen)</li>
+                                <li><strong>🔌 Power:</strong> Type A/B</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="text-muted">
+
+        <!-- 2. SCHEDULE SECTION -->
+        <section id="schedule">
+            <h2 class="mb-4 text-primary fw-bold">Daily Schedule</h2>
+            <div class="row g-4">
+                <!-- Day 1 Card -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 border-start border-primary border-4">
+                        <div class="card-header bg-white fw-bold text-primary">Day 1: Arrival & Gion</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Arrival at KIX</div>
+                                        Take the Haruka Express to Kyoto Station.
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">2:00 PM</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Hotel Check-in</div>
+                                        Settle in and freshen up.
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">4:30 PM</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Explore Gion</div>
+                                        Evening stroll through the Geisha district.
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">6:30 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Day 2 Card -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 border-start border-success border-4">
+                        <div class="card-header bg-white fw-bold text-success">Day 2: Southern Highlights</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Fushimi Inari Shrine</div>
+                                        Hike the famous Torii gate trails.
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">7:00 AM</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Nishiki Market</div>
+                                        Lunch at "Kyoto's Kitchen".
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">12:30 PM</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Kiyomizu-dera</div>
+                                        Visit the iconic wooden temple.
+                                    </div>
+                                    <span class="badge bg-secondary rounded-pill">3:30 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="text-muted">
+
+        <!-- 3. ACCOMMODATION SECTION -->
+        <section id="accommodation">
+            <h2 class="mb-4 text-primary fw-bold">Accommodation</h2>
+            <div class="card shadow-sm border-0">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI=" class="img-fluid rounded-start h-100 object-fit-cover" alt="Hotel Image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body py-4">
+                            <h3 class="card-title text-dark">Hotel Granvia Kyoto</h3>
+                            <p class="card-text text-muted mb-4">
+                                JR Kyoto Station Karasuma Chuo-guchi, Shiokoji-sagaru, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216
+                            </p>
+                            
+                            <div class="row bg-light p-3 rounded mx-0">
+                                <div class="col-6">
+                                    <p class="mb-1 text-uppercase text-muted small fw-bold">Check-in</p>
+                                    <p class="mb-0 fs-5">3:00 PM</p>
+                                </div>
+                                <div class="col-6 border-start">
+                                    <p class="mb-1 text-uppercase text-muted small fw-bold">Check-out</p>
+                                    <p class="mb-0 fs-5">12:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="text-muted">
+
+        <!-- 4. CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="mb-4 text-primary fw-bold">Important Contacts</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm border-0 bg-danger bg-opacity-10">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger mb-4">Emergency Numbers</h4>
+                            <table class="table table-borderless bg-transparent">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">Police:</td>
+                                        <td class="text-end"><span class="badge bg-danger fs-6">110</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Fire / Ambulance:</td>
+                                        <td class="text-end"><span class="badge bg-danger fs-6">119</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Japan Visitor Hotline:</td>
+                                        <td class="text-end"><span class="badge bg-danger fs-6">050-3816-2787</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary mb-4">Travel Agency Support</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message / Request</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="How can we help you?"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- End Container -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Kyoto Explorer. Safe Travels!</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (Includes Popper for Navbar functionality) -->
+    <!-- We still need this for the mobile menu toggle, but NOT for the scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Bootstrap Scrollspy activation to highlight active link (Optional, uses Bootstrap native features) -->
+    <script>
+        // Optional snippet purely to close mobile navbar when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-item .nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { 
+                if(menuToggle.classList.contains('show')){
+                    new bootstrap.Collapse(menuToggle).toggle();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
